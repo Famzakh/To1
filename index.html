@@ -42,7 +42,7 @@
             background: rgba(255, 255, 255, 0.3);
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 30px auto;
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -69,6 +69,33 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .member-card {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 15px 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .member-card:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .member-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .member-card p {
+            font-size: 14px;
+        }
     </style>
     <script>
         $(document).ready(function() {
@@ -89,6 +116,7 @@
         <a href="#section1">Giới thiệu</a>
         <a href="#section2">Phân loại</a>
         <a href="#section3">Ứng dụng</a>
+        <a href="#section4">Thành viên</a>
     </nav>
     <div class="container">
         <div id="section1" class="content active">
@@ -104,7 +132,6 @@
             </ul>
             <img src="unnamed.jpg" alt="Học máy">
         </div>
-        
         <div id="section2" class="content">
             <h2>2. Phân loại học máy</h2>
             <p>Học máy có hai phương pháp chính:</p>
@@ -115,7 +142,6 @@
             <img src="sec2.jpg" alt="giamsat1">
             <img src="sec22.jpg" alt="giamsat2">
         </div>
-        
         <div id="section3" class="content">
             <h2>3. Vai trò và ứng dụng của học máy</h2>
             <ul>
@@ -127,6 +153,39 @@
             </ul>
             <img src="sec31.jpg" alt="gia1">
             <img src="sec32.jpg" alt="gia2">
+        </div>
+        <div id="section4" class="content">
+            <h2>4. Nhiệm vụ các thành viên trong nhóm</h2>
+            <div class="card-container">
+                <div class="member-card">
+                    <h3>Nguyễn Danh</h3>
+                    <p>Soạn nội dung bài 25 - Mục 1</p>
+                </div>
+                <div class="member-card">
+                    <h3>Duy Vũ</h3>
+                    <p>Soạn nội dung bài 25 - Mục 1</p>
+                </div>
+                <div class="member-card">
+                    <h3>Đoàn Long Nhật</h3>
+                    <p>Soạn nội dung bài 25 - Mục 2</p>
+                </div>
+                <div class="member-card">
+                    <h3>Anh Nguyễn</h3>
+                    <p>Soạn nội dung bài 25 - Mục 2</p>
+                </div>
+                <div class="member-card">
+                    <h3>Lê Dương Quốc Dũng</h3>
+                    <p>Tổng hợp nội dung và thuyết trình</p>
+                </div>
+                <div class="member-card">
+                    <h3>Nguyễn Võ Thành Tú</h3>
+                    <p>Làm web</p>
+                </div>
+                <div class="member-card">
+                    <h3>Phạm Gia Khang</h3>
+                    <p>Làm web</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
